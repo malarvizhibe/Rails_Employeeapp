@@ -1,4 +1,4 @@
 class Employee < ApplicationRecord
-#validates :Name, presence: true
-#validates_numericality_of :Age, :greater_than => 18
+validates :name, presence: true
+validates_numericality_of :age, :greater_than => 18
 end
