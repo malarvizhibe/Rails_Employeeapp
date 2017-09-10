@@ -23,12 +23,12 @@
 
   <div class="field">
     <%= form.label :gender %>
-    <%= form.text_field :gender, id: :employee_gender %>
+    <%= form.select :from, [ 'Male','Female'], :prompt => 'Select one' %>
   </div>
 
   <div class="field">
     <%= form.label :role %>
-    <%= form.text_field :role, id: :employee_role %>
+    <%= form.select :from, [ 'Developer','Tester','Manager'], :prompt => 'Select a role' %>
   </div>
 
   <div class="actions">
