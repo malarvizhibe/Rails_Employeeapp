@@ -23,12 +23,12 @@
 
  <div class="field">
     <%= form.label :gender %>
-    <%= form.text_field :gender, id: :gender %>
+    <%= form.select(:gender, [['Select Gender', ''], 'Male', 'Female' ], {}, { :class => 'select' }) %>    
  </div>
 
   <div class="field">
     <%= form.label :role %>
-    <%= form.text_field :role, id: :role %>
+    <%= form.select :role, options_for_select([["Select Role", ""], "Developer", "Admin", "HR", "Tester", "System admin"]), :class => 'genForm_dropBox' %>
   </div>
 
   <div class="actions">
