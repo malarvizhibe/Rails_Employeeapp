@@ -21,9 +21,12 @@
     <%= form.number_field :age, id: :employee_age %>
   </div>
 
- <div class="field">
+  <div class="field">
     <%= form.label :gender %>
-    <%= form.select(:gender, [['Select Gender', ''], 'Male', 'Female' ], {}, { :class => 'select' }) %>    
+    <%= form.radio_button :gender, 'Male' %> Male<br />
+    <%= form.radio_button :gender, 'Female' %> Female<br />
+    <%= form.radio_button :gender, 'Other' %> Other<br />
+        
  </div>
 
   <div class="field">
